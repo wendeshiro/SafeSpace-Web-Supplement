@@ -2,7 +2,6 @@
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: #000000;
   overflow: hidden;
 }
 
@@ -12,6 +11,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .sidebar {
@@ -22,7 +22,7 @@
   height: 100%;
   padding: 48px;
   box-sizing: border-box;
-  background: linear-gradient(180deg, rgba(55, 31, 94, 0.7) 0%, rgba(0, 0, 0, 0.7) 30.29%);
+  background: linear-gradient(180deg, rgba(55, 31, 94, 1) 0%, rgba(0, 0, 0, 0.9) 30.29%);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
   display: flex;
@@ -52,6 +52,12 @@
   overflow-y: auto;
   padding-right: 8px;
   flex: 1;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.reportList::-webkit-scrollbar {
+  display: none;
 }
 
 .locationBarWrapper {

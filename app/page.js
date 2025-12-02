@@ -1,29 +1,32 @@
-import React from "react";
+"use client";
+
+import dynamic from "next/dynamic";
 import styles from "./page.module.css";
 import Button from "./components/Button";
 import Sort from "./components/Sort";
 import ReportCard from "./components/ReportCard";
 import LocationBar from "./components/LocationBar";
-import { MapPin } from "lucide-react";
 import reports from "./report.json";
 
+// Dynamically import Map component with no SSR
+const Map = dynamic(() => import("./components/Map"), {
+  ssr: false,
+  loading: () => <div style={{ width: "100%", height: "100%", background: "#e5e7eb" }} />,
+});
+
 export default function PostedReports() {
-  const mapPins = [
-    { id: 1, top: "456px", left: "calc(66.67% - 22px)" },
-    { id: 2, top: "553px", left: "calc(75% - 30px)" },
-    { id: 3, top: "426px", left: "calc(50% + 52px)" },
-    { id: 4, top: "316px", left: "calc(58.33% + 13px)" },
+  const mapMarkers = [
+    { id: 1, position: [49.2488, -123.0016], title: "Incident 1" },
+    { id: 2, position: [49.252, -123.01], title: "Incident 2" },
+    { id: 3, position: [49.245, -122.995], title: "Incident 3" },
+    { id: 4, position: [49.255, -123.005], title: "Incident 4" },
   ];
 
   return (
     <main className={styles.main}>
       {/* Map Area */}
       <div className={styles.mapArea}>
-        {mapPins.map((pin) => (
-          <div key={pin.id} className={styles.mapPin} style={{ top: pin.top, left: pin.left }}>
-            <MapPin size={48} fill="#8449DF" color="#d7c4f3ff" strokeWidth={1} />
-          </div>
-        ))}
+        <Map markers={mapMarkers} />
       </div>
 
       {/* Sidebar */}
