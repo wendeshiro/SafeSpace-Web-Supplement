@@ -1,6 +1,7 @@
 import styles from "./page.module.css";
 import ReportCard from "./components/ReportCard";
 import Button from "./components/Button";
+import Sort from "./components/Sort";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Button variant="primary">Generate Summary</Button>
       <Button variant="tertiary">Summarize Posts</Button>
       <Button variant="secondary">Cancel</Button>
+      <Sort />
     </div>
   );
 }

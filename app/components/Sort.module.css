@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: opacity 0.2s ease;
+}
+
+.container:hover {
+  opacity: 0.8;
+}
+
+.text {
+  font-family: "Satoshi Variable", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
