@@ -46,7 +46,7 @@ export default function PostedReports() {
               location={report.location}
               date={report.date}
               timestamp={report.timestamp}
-              excerpt={report.excerpt}
+              excerpt={report.summary}
             />
           ))}
         </div>

@@ -6,7 +6,7 @@
     "location": "4376 Gilpin Cres, Burnaby BC",
     "date": "November 4, 2025",
     "timestamp": "10:15 PM",
-    "excerpt": "During a worksite interaction, several workers engaged in repeated instances of discriminatory and harassing behavior directed toward a female coworker and others on site. The incident involved the use of derogatory language, exclusionary behavior, and comments that reinforced gender-based bias and hostility."
+    "summary": "During a worksite interaction, several workers engaged in repeated instances of discriminatory and harassing behavior directed toward a female coworker and others on site. The incident involved the use of derogatory language, exclusionary behavior, and comments that reinforced gender-based bias and hostility."
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "location": "2095 Commissioner Street, Vancouver, BC",
     "date": "November 6, 2025",
     "timestamp": "5:15 PM",
-    "excerpt": "During a morning break at the North Dock construction site, several workers were overheard making discriminatory remarks toward a recently hired apprentice who identifies as Indigenous."
+    "summary": "During a morning break at the North Dock construction site, several workers were overheard making discriminatory remarks toward a recently hired apprentice who identifies as Indigenous."
   },
   {
     "id": 3,
@@ -24,6 +24,6 @@
     "location": "123 Location Street, Vancouver",
     "date": "November 6, 2025",
     "timestamp": "10:15 PM",
-    "excerpt": "Lorem ipsum dolor sit amet consectetur. Neque turpis id vulputate malesuada amet pellentesque leo vel. Sapien eget cras ac neque feugiat porta elementum felis pharetra. Ut consequat dui malesuada odio posuere tristique habitasse gravida in."
+    "summary": "Lorem ipsum dolor sit amet consectetur. Neque turpis id vulputate malesuada amet pellentesque leo vel. Sapien eget cras ac neque feugiat porta elementum felis pharetra. Ut consequat dui malesuada odio posuere tristique habitasse gravida in."
   }
 ]

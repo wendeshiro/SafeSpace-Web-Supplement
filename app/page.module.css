@@ -20,8 +20,7 @@
   left: 0;
   width: 620px;
   height: 100%;
-  padding: 30px 40px 20px 40px;
-  box-sizing: border-box;
+  padding: 20px 40px 20px 40px;
   background: linear-gradient(180deg, rgba(55, 31, 94, 1) 0%, rgba(0, 0, 0, 0.9) 30.29%);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
@@ -38,7 +37,7 @@
   line-height: 40px;
   color: #ffffff;
   text-align: center;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 .sort {
@@ -80,7 +79,7 @@
 .logoWrapper {
   z-index: 999;
   position: absolute;
-  top: 20px;
+  top: 22px;
   left: 230px;
   display: flex;
   flex-direction: row;

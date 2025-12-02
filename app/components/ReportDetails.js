@@ -73,7 +73,7 @@ export default function ReportDetails() {
         </div>
       </div>
 
-      <div className={styles.section}>
+      <div className={`${styles.section} ${styles.actionSection}`}>
         <h2 className={styles.sectionTitle}>Recommended Actions</h2>
         <div className={styles.actionItem}>
           <p className={styles.actionText}>Provide Bystander Intervention and Respect Training</p>

@@ -4,8 +4,6 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  backdrop-filter: blur(2px);
-  box-sizing: border-box;
   color: #ffffff;
   overflow-y: auto;
   -ms-overflow-style: none; /* IE and Edge */
@@ -42,7 +40,9 @@
   gap: 12px;
   width: 100%;
 }
-
+.actionSection {
+  margin-bottom: 30px;
+}
 .sectionTitle {
   font-family: "Satoshi Variable", sans-serif;
   font-weight: 500;
