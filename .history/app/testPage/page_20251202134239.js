@@ -8,14 +8,11 @@ import ReportCard from "../components/ReportCard";
 import LocationBar from "../components/LocationBar";
 import reports from "../data/report.json";
 import ReportDetails from "../components/ReportDetails";
-import Dialog from "../components/Dialog";
 
 // Dynamically import Map component with no SSR
 const Map = dynamic(() => import("../components/Map"), {
   ssr: false,
-  loading: () => (
-    <div style={{ width: "100%", height: "100%", background: "#e5e7eb" }} />
-  ),
+  loading: () => <div style={{ width: "100%", height: "100%", background: "#e5e7eb" }} />,
 });
 
 export default function testPage() {
@@ -35,15 +32,15 @@ export default function testPage() {
 
       {/* Sidebar */}
       <div className={styles.sidebar}>
-        <Dialog />
+        <ReportDetails />
       </div>
 
       {/* Location Bar */}
       <div className={styles.locationBarWrapper}>
-        <LocationBar location='3700 Willingdon Avenue, Burnaby' />
+        <LocationBar location="3700 Willingdon Avenue, Burnaby" />
       </div>
       <div className={styles.logoWrapper}>
-        <img src='/logo.svg' alt='Logo' className={styles.logo} />
+        <img src="/logo.svg" alt="Logo" className={styles.logo} />
         <p>SafeSpace</p>
       </div>
     </main>
