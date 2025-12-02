@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./ReportCard.module.css";
 
 export default function ReportCard({

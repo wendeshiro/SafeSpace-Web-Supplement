@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import ReportCard from "./components/ReportCard";
+import Button from "./components/Button";
 
 export default function Home() {
   return (
@@ -12,6 +13,9 @@ export default function Home() {
         date="2025-11-04"
         timestamp="10:15 AM"
       />
+      <Button variant="primary">Generate Summary</Button>
+      <Button variant="tertiary">Summarize Posts</Button>
+      <Button variant="secondary">Cancel</Button>
     </div>
   );
 }
