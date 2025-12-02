@@ -1,0 +1,113 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  backdrop-filter: blur(2px);
+  box-sizing: border-box;
+  color: #ffffff;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.title {
+  font-family: "Satoshi Variable", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  margin: 0;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Satoshi Variable", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-family: "Satoshi Variable", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chipText {
+  font-family: "Satoshi Variable", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.summaryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aiLabel {
+  color: #b0b0b0;
+  font-size: 16px;
+}
+
+.summaryText {
+  font-family: "Satoshi Variable", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  white-space: pre-wrap;
+}
+
+.actionItem {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 12px 16px;
+  width: 100%;
+}
+
+.actionText {
+  font-family: "Satoshi Variable", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+
+.backButton {
+  align-self: flex-start;
+}
