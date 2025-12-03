@@ -22,9 +22,9 @@ const createCustomIcon = (isSelected) => {
   const iconHtml = renderToStaticMarkup(
     <MapPin
       size={50}
-      color={isSelected ? "#8449DF" : "#8449DF"}
-      fill={isSelected ? "#8449DF" : "#fefefeff"}
-      strokeWidth={1.8}
+      color={isSelected ? "#8449DF" : "#FFFFFF"}
+      fill={isSelected ? "#8449DF" : "#8449DF"}
+      strokeWidth={1.2}
     />
   );
 
@@ -55,10 +55,26 @@ export default function Map({ markers = [], onMarkerClick, selectedMarkerId }) {
       style={{ height: "100%", width: "100%" }}
       zoomControl={false} // Hide zoom control for cleaner background look
     >
-      <TileLayer
+      {/* <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />  */}
+      {/* ↑ Normal theme ↑ */}
+      {/* <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
+      /> */}
+      {/* ↑ Ultra-dark theme ↑ */}
+      <TileLayer
+        attribution='&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>'
+        url="https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}{r}.png"
       />
+      {/* ↑ Mid-dark theme ↑ */}
+      {/* <TileLayer
+        attribution="Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-GP, and the GIS User Community"
+        url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
+      /> */}
+      {/* ↑ Satellite theme ↑ */}
       {markers.map((marker) => (
         <Marker
           key={marker.id}
