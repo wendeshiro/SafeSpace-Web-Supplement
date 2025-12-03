@@ -1,7 +1,20 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
 .container {
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.9);
   border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 24px;
@@ -10,13 +23,13 @@
   align-items: center;
   gap: 20px;
   width: 100%;
-  max-width: 500px;
+  max-width: 530px;
 }
 
 .title {
   font-weight: 700;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 36px;
   color: #000000;
   text-align: center;
 }
@@ -27,7 +40,7 @@
   align-items: center;
   gap: 12px;
   text-align: center;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
   color: #000000;
 }
@@ -52,7 +65,7 @@
 
 .label {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 28px;
   color: #000000;
   text-align: center;
