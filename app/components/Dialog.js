@@ -14,10 +14,10 @@ const Dialog = ({ onClose, onGenerate }) => {
         </div>
 
         <div className={styles.inputSection}>
-          <p className={styles.label}>Choose how wide an area to include:</p>
+          {/* <p className={styles.label}>Choose how wide an area to include:</p> */}
           <div className={styles.inputWrapper}>
             <span className={styles.inputValue}>Within 50 km</span>
-            <ChevronDown color="#7842CB" size={24} />
+            {/* <ChevronDown color="#7842CB" size={24} /> */}
           </div>
         </div>
 

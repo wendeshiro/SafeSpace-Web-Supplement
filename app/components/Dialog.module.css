@@ -83,7 +83,7 @@
   width: 100%;
   max-width: 382px;
   box-sizing: border-box;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .inputValue {
